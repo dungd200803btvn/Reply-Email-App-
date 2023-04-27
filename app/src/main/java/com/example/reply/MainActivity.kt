@@ -23,12 +23,22 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-@Preview(showBackground = true)
+@Preview(showBackground = true, widthDp = 700 )
 @Composable
-fun ReplyAppPreview() {
+fun ReplyAppMediumPreview() {
     ReplyTheme {
         ReplyApp(
-            windowsize = WindowWidthSizeClass.Compact,
+            windowsize = WindowWidthSizeClass.Medium
+        )
+    }
+}
+@Preview(showBackground = true, widthDp = 1000 )
+@Composable
+fun ReplyAppExpandedePreview() {
+    ReplyTheme {
+        ReplyApp(
+            windowsize = WindowWidthSizeClass.Expanded
+
         )
     }
 }
